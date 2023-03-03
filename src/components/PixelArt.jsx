@@ -1,9 +1,12 @@
 import React from "react";
 import ColorPicker from "./ColorPicker";
+import { colorContext } from "../Context";
+import ColorProvider from "../Context";
+
 import Pixels from "./Pixels";
 const PixelArt = () => {
   return (
-    <div
+    <ColorProvider
       style={{
         display: "flex",
         justifyContent: "center",
@@ -14,7 +17,7 @@ const PixelArt = () => {
     >
       <ColorPicker />
       <Pixels />
-    </div>
+    </ColorProvider>
   );
 };
 
