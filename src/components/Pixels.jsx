@@ -1,4 +1,6 @@
 import React from "react";
+import { colorContext } from "./../Context";
+
 import Pixel from "./Pixel";
 
 const Pixels = () => {

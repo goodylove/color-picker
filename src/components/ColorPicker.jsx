@@ -1,5 +1,7 @@
-import React from "react";
+import React, { useContext } from "react";
+import { colorContext } from "./../Context";
 const ColorPicker = () => {
+  const { setColor } = useContext(colorContext);
   const colors = [
     "red",
     "green",
@@ -13,6 +15,7 @@ const ColorPicker = () => {
     <div>
       {colors.map((color) => (
         <button
+          onClick={() => setColor(color)}
           style={{
             backgroundColor: color,
             height: "20px",

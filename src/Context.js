@@ -1,6 +1,9 @@
 import React, { createContext, useState } from "react";
 
-export const colorContext = createContext();
+export const colorContext = createContext({
+  color: "lightGrey",
+  setColor: () => {},
+});
 
 const ColorProvider = ({ children }) => {
   const [color, setColor] = useState("lightGrey");
