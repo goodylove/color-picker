@@ -6,7 +6,18 @@ const Pixels = () => {
 
   for (let x = 0; x < 50; x++) pixels.push(<Pixel />);
 
-  return <div>{pixels}</div>;
+  return (
+    <div
+      style={{
+        display: "grid",
+        gridTemplateColumns: "repeat(10,1fr)",
+        margin: "0 auto",
+        width: "200px",
+      }}
+    >
+      {pixels}
+    </div>
+  );
 };
 
 export default Pixels;

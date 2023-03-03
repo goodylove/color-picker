@@ -19,6 +19,7 @@ const ColorPicker = () => {
             margin: "10px 10px",
             width: "20px",
           }}
+          key={color}
         />
       ))}
     </div>
