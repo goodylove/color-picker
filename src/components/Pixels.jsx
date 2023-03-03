@@ -4,14 +4,14 @@ import Pixel from "./Pixel";
 const Pixels = () => {
   const pixels = [];
 
-  for (let x = 0; x < 50; x++) pixels.push(<Pixel />);
+  for (let x = 0; x < 50; x++) pixels.push(<Pixel key={x} />);
 
   return (
     <div
       style={{
         display: "grid",
         gridTemplateColumns: "repeat(10,1fr)",
-        margin: "0 auto",
+        margin: "10px",
         width: "200px",
       }}
     >

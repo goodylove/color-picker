@@ -3,7 +3,15 @@ import ColorPicker from "./ColorPicker";
 import Pixels from "./Pixels";
 const PixelArt = () => {
   return (
-    <div>
+    <div
+      style={{
+        display: "flex",
+        justifyContent: "center",
+        flexDirection: "column",
+        width: "100%",
+        alignItems: "center",
+      }}
+    >
       <ColorPicker />
       <Pixels />
     </div>
